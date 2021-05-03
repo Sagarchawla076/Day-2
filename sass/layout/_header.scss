@@ -1,0 +1,25 @@
+.header{
+  @include respond(tab-landscape){
+    height: 50vh;
+    padding: 20rem;
+  
+  }
+  height: 100vh;
+  margin: 4rem 8rem;
+  padding-bottom: 4rem;
+  position: relative;
+
+  &__container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,[col-start]1fr[col-end]);
+  }
+
+  &__main{
+    grid-column:col-start 1 / col-end 8;
+    font-size: $main-heading--1;
+    span{
+      color:orangered;
+    }
+  }
+}
